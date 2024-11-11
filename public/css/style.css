@@ -1,0 +1,524 @@
+@font-face{
+    font-family: iransans;
+    src:url(../fonts/iransansweb.woff2) format('woff2');
+}
+
+*{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iransans;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.alert{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/*******************************************************************************  Backgrounds & colors*/
+
+.bg-dark{
+    background: rgb(9 12 31) !important;
+}
+
+.bg-second{
+    background-color: #21bdd0;
+}
+
+.bg-third{
+    background: radial-gradient(#7136f0 , #21bdd0);
+}
+
+.bg-fourth{
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+
+.bg-admin{
+    background-image: url("../images/admin/bg-admin.jpg");
+    /* background-size: 500px; */
+    background-size: cover;
+}
+
+.text-second{
+    color: #21bdd0;
+}
+
+/*******************************************************************************  Buttons */
+
+.btn-eshop{
+    background-color:#7136f0;
+    color: #fff;
+}
+
+.btn-eshop:hover{
+    background-color:#fff;
+    color: #7136f0;
+    border: thin solid #7136f0;
+}
+/*****/
+.btn-alert{
+    background: linear-gradient(to top,#950000 , #ff4646);
+    border: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.btn-alert:hover{
+    color:#fff;
+    box-shadow: 0px 5px 8px 2px silver;
+}
+/*****/
+.btn-remove{
+    background: #dd0202;
+    /*border: none;*/
+    color: #fff;
+    transition: all 0.5s;
+    white-space: nowrap;
+}
+
+.btn-remove:hover{
+    background: #fff;
+    border: thin solid #950000 ;
+    color: #950000 ;
+}
+/*****/
+.btn-back{
+    background: linear-gradient(to bottom , rgb(9 12 31) , rgb(28, 37, 92));
+}
+
+/*******************************************************************************  LOGO */
+.site-logo{
+    width: 170px;
+    transition:all 0.5s;
+}
+
+.site-logo:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*******************************************************************************  header */
+.navbar-nav{
+    text-align: center;
+}
+
+
+.nav-link{
+    color: #fff !important;
+    white-space: nowrap;
+}
+
+.nav-link:hover{
+    color:#21bdd0!important;
+}
+
+.account{
+    border-radius: 30px;
+    background-color: rgb(113 54 240);
+    transition: all 0.5s;
+}
+
+.account:hover{
+    background-color: #fff;
+    border-color: rgb(113 54 240);
+    color:rgb(113 54 240)!important;
+
+}
+
+.search-form{
+    direction: ltr;
+    position: relative;
+    width: 100%;
+}
+
+.search-inp{
+    position: relative;
+    width: 100% !important;
+    border: none;
+    border-radius: 30px;
+}
+
+.search-btn{
+    position: absolute;
+    border-radius: 30px 0px 0px 30px;
+    background-color: transparent;
+    color: rgb(113 54 240);
+}
+
+.search-container{
+    width: 100%;
+}
+
+.search-result-container{
+    /*width: 100%;*/
+    background-color: rgb(9 12 31) ;
+    color: #fff;
+    position: absolute;
+    top: 70px;
+    z-index: 3;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.main-search{
+    width: 100%;
+}
+
+.search-img{
+    width: 25%;
+}
+
+.navbar-toggler{
+    border-color: rgb(113 54 240) !important;
+}
+
+.menu-icon{
+    color: rgb(113 54 240);
+}
+
+
+/******************************************************************************* footer */
+.footer-p{
+    color: #fff;
+}
+
+.text-uppercase{
+    color: rgb(113 54 240);
+}
+
+.footer-ul{
+    text-align: center;
+}
+
+.footer-ul a{
+    color: #fff;
+}
+
+.footer-social a{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(to top right,rgb(113 54 240),#21bdd0);
+    transition: all 0.5s;
+}
+
+.footer-social a:hover{
+    transform: rotateZ(360deg);
+}
+/******************************************************************************* carousel */
+
+.carousel-background{
+    background: linear-gradient(to bottom , rgb(9 12 31) , rgb(113 54 240) , #21bdd0);
+}
+
+.carousel-img{
+    border-radius: 30px;
+    width: 1100px;
+}
+
+.crousel-arrow{
+    font-size: 30px;
+    color: #000;
+}
+
+.txt-shadow{
+    text-shadow: 0px 0px 5px #000;
+}
+
+/******************************************************************************* Category */
+
+.category-img{
+    width: 100px;
+}
+
+.card-img-top{
+    width: 100px;
+}
+
+.card-link{
+    color: black;
+    margin: 10px 0px;
+}
+
+.card-link:hover{
+    color: black;
+}
+
+.card-size{
+    width: 250px;
+    text-align: right;
+    padding: 10px 0px;
+}
+
+.card-img-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to top right,rgb(113 54 240),#21bdd0);
+}
+
+.card-link .category-img{
+    transition: all 0.5s;
+}
+
+.card-link:hover .category-img{
+    transform: scale(1.25 ,1.25);
+}
+
+.card-txt{
+    color: black;
+}
+
+.card-txt:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.card-products{
+    width: 250px;
+}
+
+.img-round{
+    border-radius:0.7rem 0.7rem 0 0 ;
+}
+
+/******************************************************************************* Forms */
+.form-back-ground{
+    background-image: url('../images/backgrounds/eshop_background.jpg');
+}
+
+.login-back{
+    background-color:rgb(9 12 31);
+}
+
+.login-back img{
+    width: 200px;
+}
+
+.shdow{
+    box-shadow: 0px 0px 5px 5px silver;
+}
+
+/******************************************************************************* product cards */
+
+.card-products{
+    width:250px;
+}
+
+.card-products img{
+    width: 100%;
+}
+
+/******************************************************************************* product details */
+.detail-img {
+    border-radius: 15px;
+}
+
+/*******************************************************************************  cartList */
+.cart-img{
+    width: 350px;
+}
+
+.alert-txt{
+    font-size: 45px;
+}
+
+/*******************************************************************************  order */
+.cmt-box{
+    resize: none;
+}
+
+/*******************************************************************************  User-Panel */
+
+.brder{
+    border-top: 2px solid rgb(9 12 31) ;
+}
+
+.order-img{
+    width: 150px;
+}
+
+.order-h-img{
+    width: 180px;
+}
+
+.shadow{
+    box-shadow:0 .5rem 1rem rgb(0,0,0) !important;
+}
+
+/*******************************************************************************  Rating */
+
+.star-container{
+    cursor: pointer;
+    color: silver;
+}
+
+.checked-star{
+    color: gold;
+}
+/*******************************************************************************  Swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    /*font-size: 18px;*/
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rounded{
+    border-radius: 0.7rem !important;
+}
+
+/*////////////////////////////// ADMIN ///////////////////////////////////// */
+
+/******************************************************************************* Admin Panel */
+
+.admin-panel-info > div{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+
+}
+
+.admin-panel-info p{
+    color: #fff;
+    text-shadow: 0px 0px 6px #000;
+    font-size: 35px;
+}
+
+.admin-panel-info strong{
+    color: #fff;
+    text-shadow: 0px 0px 6px #000;
+}
+
+.admin-user-info-bg{
+    background-image: url("../images/admin/user-profile-icon-abstract-digital-design-blue-background-isolated-172062850.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.admin-download-info-bg{
+    background-image: url("../images/admin/pngtree-blue-glare-globe-banner-technology-picture-image_881481.png");
+    background-size: cover;
+}
+
+.admin-sell-info-bg{
+    background-image: url("../images/admin/Truthfinder background check - how much does it cost-landscape-large.jpg");
+    background-size: cover;
+}
+
+.admin-sell-info-bg p{
+    border: none;
+    font-size: 25px;
+}
+
+.admin-info-cnt{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
+.admin-panel-img{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.product-control{
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.product-control:hover{
+    background-color: #7136f0;
+}
+
+.product-control-container{
+    border: 4px solid rgb(9 12 31);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.product-info-container{
+    width: 100%;
+    max-height: 700px;
+    overflow: auto;
+}
+
+.product-control-search{
+    width: 100%;
+    background-color:rgb(9 12 31) ;
+
+}
+
+.product-control-search input{
+    width: 100%;
+}
+
+.admin-product-search{
+    height: 40px;
+    border: none;
+    border-bottom: thin solid silver;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/******************************************************************************** panel */
+
+.panel-img{
+    width: 230px;
+}
+
+.panel-option{
+    border-radius: 15px;
+}
+
+.panel-option:hover .panel-img img{
+    transform: scale(1.1 ,1.1);
+}
+
+.panel-img img{
+    transition: all 0.5s;
+    width: 100%;
+}
+
+/******************************************************************************* SideBar */
+
+.edit-desc{
+    max-height: 70px;
+    overflow: auto;
+}
+
+.username-prf{
+    width: 100px;
+    height: 100px;
+}
+

@@ -1,0 +1,45 @@
+@media only screen and (max-width: 900px){
+    .table-font{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .carousel-img{
+        border-radius: 0px;
+        margin-bottom: 0px!important;
+    }
+
+    .alert-txt{
+        font-size: 30px;
+    }
+
+    .cart-img{
+        width:200px;
+    }
+
+    .table-font{
+        font-size: 15px;
+    }
+
+}
+
+@keyframes error{
+    0%{
+        color: transparent;
+    }
+    50%{
+        color: rgb(196, 0, 0);
+        background-color: white;
+        border-radius: 50%;
+    }
+    100%{
+        color: transparent;
+    }
+}
+
+.error-icon{
+    animation-name: error;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
